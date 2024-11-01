@@ -1,0 +1,73 @@
+/*todo: prefix all selectors to avoid any conflict with another plugin*/
+
+.plan-picker,
+.attached-checkout {
+    display: none;
+}
+
+.repeater {
+    margin-bottom: 50px;
+    max-width: 900px;
+}
+
+.repeater:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.repeater-item {
+    position: relative;
+    box-sizing: border-box;
+    border: 2px dashed #d3d3d3;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.delete-me {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    opacity: .5;
+    transition: 300ms;
+    outline: none;
+    text-align: center;
+    font-size: 11px;
+    line-height: 18px;
+}
+
+.delete-me:hover{
+    opacity: 1;
+}
+
+.add-more-btn{
+    float: right;
+}
+
+#sbis-tabs ul li{
+    display: inline;
+}
+
+
+#sbis-tabs ul .ui-tabs-active a{
+    background-color: #fff;
+    color: #444;
+}
+
+.attached-checkout .repeater-item{
+    max-width: 900px;
+}
+
+.sbse-settings-form select:focus{
+    border: none !important;
+    box-shadow: none !important;
+}
